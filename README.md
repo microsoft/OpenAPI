@@ -1,3 +1,17 @@
-# Contributing
+# OpenAPI
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Services using OpenAPI
+- [Logic Apps](https://docs.microsoft.com/en-us/azure/connectors/connectors-native-http-swagger)
+- [Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-api-definition) 
+- [Api Apps](https://docs.microsoft.com/en-us/azure/app-service-api/app-service-api-dotnet-get-started)
+- [API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-import-api)
+- [Docs](https://docs.microsoft.com)
+- [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/register-custom-api/)
+
+## Tools for OpenAPI
+- [AutoRest](https://github.com/Azure/AutoRest)
+
+## Extensions
+- [AutoRest Extensions]( https://github.com/Azure/autorest/blob/master/docs/extensions/readme.md)
+- [PowerApps Extensions](https://powerapps.microsoft.com/en-us/tutorials/customapi-how-to-swagger/)
+
