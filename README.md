@@ -13,5 +13,5 @@
 
 ## Extensions
 - [AutoRest Extensions]( https://github.com/Azure/autorest/blob/master/docs/extensions/readme.md)
-- [PowerApps / Flow Extensions](https://powerapps.microsoft.com/en-us/tutorials/customapi-how-to-swagger/)
+- [PowerApps / Flow Extensions](https://flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/)
 
