@@ -15,8 +15,8 @@
 
 ## Extensions 
 
-| Name | Purpose | Used By |  Status |
-|------|---------|---------|--------|----|
+| Name | Purpose | Used By | Status |
+|------|---------|---------|--------|
 |x-ms-azure-resource | indicates that the [Definition Schema Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#schemaObject) is a resource as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx) |AutoRest||
 |x-ms-client-flatten | flattens client model property or parameter. |AutoRest| |
 |x-ms-client-name | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
