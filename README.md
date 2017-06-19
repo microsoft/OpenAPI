@@ -26,6 +26,7 @@
 |x-ms-dynamic-values| |Flow, Logic Apps ||
 |x-ms-dynamic-schema|This is a hint to the flow designer that the schema for this parameter or response is dynamic in nature.|Flow, Logic Apps| |
 |x-ms-enum | additional metadata for enums |AutoRest| |
+|x-ms-export-notes | Notes about loss of API fidelity during export |API Management | |
 |x-ms-external | allows specific Definition Objects to be excluded from code generation |AutoRest| |
 |x-ms-long-running-operation | indicates that the operation implemented Long Running Operation pattern as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx).
 |x-ms-mutability | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest||
@@ -34,8 +35,9 @@
 |x-ms-parameter-grouping | groups method parameters in generated clients |AutoRest|
 |x-ms-parameter-location | provides a mechanism to specify that the global parameter is actually a parameter on the operation and not a client property. |AutoRest|
 |x-ms-parameterized-host | replaces the OpenAPI host with a host template that can be replaced with variable parameters. |AutoRest||
-|x-ms-paths  | alternative to Paths Object that allows Path Item Object to have query parameters for non pure REST APIs |AutoRest| |
+|x-ms-paths  | alternative to Paths Object that allows Path Item Object to have query parameters for non pure REST APIs |AutoRest, API Management| |
 |x-ms-request-id | allows to overwrite the request id header name |AutoRest||
+|x-ms-servers|Support for identifying multiple API hosts|API Management| Temporary until official V3 `servers`|
 |x-ms-skip-url-encoding| skips URL encoding for path and query parameters |AutoRest| Support for unencoded query parameters in v3|
 |x-ms-summary| Short plain text description used for parameters|Flow, Logic Apps, Functions| In V3 schema.title can be used instead |
 |x-ms-visibility| Determines the user facing visibility of the entity. The possible values are important, advanced and internal | Flow, Logic Apps | |
