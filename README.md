@@ -15,8 +15,8 @@
 
 ## Extensions 
 
-| Name | Purpose | Used By |  Status |
-|------|---------|---------|--------|----|
+| Name | Purpose | Used By | Status |
+|------|---------|---------|--------|
 |x-ms-azure-resource | indicates that the [Definition Schema Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#schemaObject) is a resource as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx) |AutoRest||
 |x-ms-client-flatten | flattens client model property or parameter. |AutoRest| |
 |x-ms-client-name | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
@@ -28,9 +28,9 @@
 |x-ms-enum | additional metadata for enums |AutoRest| |
 |x-ms-export-notes | Notes about loss of API fidelity during export |API Management | |
 |x-ms-external | allows specific Definition Objects to be excluded from code generation |AutoRest| |
-|x-ms-long-running-operation | indicates that the operation implemented Long Running Operation pattern as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx).
+|x-ms-long-running-operation | indicates that the operation implemented Long Running Operation pattern as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx).|AutoRest||
 |x-ms-mutability | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest||
-|x-ms-odata | indicates the operation includes one or more [OData](http://www.odata.org/) query parameters. |AutoRest|Azure||
+|x-ms-odata | indicates the operation includes one or more [OData](http://www.odata.org/) query parameters. |AutoRest|||
 |x-ms-pageable | allows paging through lists of data. |AutoRest||
 |x-ms-parameter-grouping | groups method parameters in generated clients |AutoRest|
 |x-ms-parameter-location | provides a mechanism to specify that the global parameter is actually a parameter on the operation and not a client property. |AutoRest|
