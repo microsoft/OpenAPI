@@ -4,6 +4,7 @@
 - [Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-api-definition) 
 - [Api Apps](https://docs.microsoft.com/en-us/azure/app-service-api/app-service-api-dotnet-get-started)
 - [API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-import-api)
+- [Logic Apps](https://docs.microsoft.com/en-us/rest/api/logic/workflows#Workflows_ListSwagger)
 
 ## Tools that consume OpenAPI
 - [AutoRest](https://github.com/Azure/AutoRest)
@@ -18,12 +19,13 @@
 | Name | Purpose | Used By | Status |
 |------|---------|---------|--------|
 |x-ms-azure-resource | indicates that the [Definition Schema Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#schemaObject) is a resource as defined by the [Resource Managemer API](https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx) |AutoRest||
+|x-ms-capabilities| object of capabilities supported by the API (like chunked transfer)|Logic Apps, Flow||
 |x-ms-client-flatten | flattens client model property or parameter. |AutoRest| |
 |x-ms-client-name | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
 |x-ms-client-request-id | allows to overwrite the client request id header name |AutoRest||
 |x-ms-code-generation-settings | enables passing code generation settings via OpenAPI document |Autorest|  |
 |x-ms-discriminator-value | maps discriminator value on the wire with the definition name |AutoRest||
-|x-ms-dynamic-values| |Flow, Logic Apps ||
+|x-ms-dynamic-values|Maps to an operation to return allowed values for a parameter that are dynamic in nature (different for each user)|Flow, Logic Apps ||
 |x-ms-dynamic-schema|This is a hint to the flow designer that the schema for this parameter or response is dynamic in nature.|Flow, Logic Apps| |
 |x-ms-enum | additional metadata for enums |AutoRest| |
 |x-ms-export-notes | Notes about loss of API fidelity during export |API Management | |
@@ -40,6 +42,8 @@
 |x-ms-servers|Support for identifying multiple API hosts|API Management| Temporary until official V3 `servers`|
 |x-ms-skip-url-encoding| skips URL encoding for path and query parameters |AutoRest| Support for unencoded query parameters in v3|
 |x-ms-summary| Short plain text description used for parameters|Flow, Logic Apps, Functions| In V3 schema.title can be used instead |
+|x-ms-test-value| Sample value to use when running automated testing of the API| Flow, Logic Apps| |
+|x-ms-trigger| Describes the type of response returned when operation is being used as an event trigger for a process|Flow, Logic Apps ||
 |x-ms-visibility| Determines the user facing visibility of the entity. The possible values are important, advanced and internal | Flow, Logic Apps | |
 
 ## Extension Documentation
