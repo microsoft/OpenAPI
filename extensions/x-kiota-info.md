@@ -8,15 +8,19 @@ The `x-ms-kiota-info`object is used to contain information used by the Kiota API
 
 ### Properties
 
+Properties are optional unless specified otherwise.
+
 | name | type | description |
 |---|---|---|
-| languagesInformation | map[languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` parameter will be used by Kiota.|
+| languagesInformation | map[string,languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` [parameter](https://microsoft.github.io/kiota/using.html#--language--l) will be used by Kiota. Keys are matched case insensitive.|
 
 ## languageInformation Object
 
 For each programming language supported by the API, a `languageInformation` object describes the recommended properties values to use for generation and usage of the API client code.
 
-### languageInformation Object Properties
+### Properties
+
+Properties are optional unless specified otherwise.
 
 | name | type | description |
 |---|---|---|
@@ -35,8 +39,8 @@ An object that represents a package dependency that is required for the generate
 
 | name | type | description |
 |---|---|---|
-| name | string| Name of package|
-| version | string| Version of the package |
+| name | string| *Required* Name of package|
+| version | string| *Required* Version of the package |
 
 ## Schema
 
