@@ -27,7 +27,6 @@ Properties are optional unless specified otherwise.
 | className | string| The name to use for generated client class|
 | namespace |string | The namespace to use for all the generated classes(where supported by the language writer).|
 | mediaTypes | string[]| Array of strings identifying media types used to represent structured types.|
-| maturityLevel | string | Not sure this should be here.|
 | dependencyInstallCommand | string | A template for a command to be used to install dependencies for use with the API|
 | dependencies | package[]] | An array of packages that the generated client code is dependent on.|
 
@@ -61,7 +60,6 @@ $defs:
       className: { type: string }
       namespace: { type: string }
       mediaType: { type: array, items: {type: string} }
-      maturityLevel: {type: string, enum: [Experimental,Preview,Stable]}
       dependencyInstallCommand: { type: string }
       dependencies: { type: array, items: {$ref: "#/$defs/package"} }
   package:
@@ -84,7 +82,6 @@ x-ms-kiota-info:
     CSharp:
       className: graphClient
       namespace: Microsoft.Graph
-      maturityLevel: Experimental
       dependencyInstallCommand: dotnet add package {name} --version {version}
       dependencies:
         - name: Microsoft.Graph.Core
