@@ -24,9 +24,9 @@ Properties are optional unless specified otherwise.
 
 | name | type | description |
 |---|---|---|
-| className | string| The name to use for generated client class|
-| namespace |string | The namespace to use for all the generated classes(where supported by the language writer).|
-| mediaTypes | string[]| Array of strings identifying media types used to represent structured types.|
+| clientClassName | string| The name to use for generated client class|
+| clientNamespaceName |string | The namespace to use for all the generated classes(where supported by the language writer).|
+| structuredMimeTypes | string[]| Array of strings identifying media types used to represent structured types.|
 | dependencyInstallCommand | string | A template for a command to be used to install dependencies for use with the API|
 | dependencies | package[]] | An array of packages that the generated client code is dependent on.|
 
@@ -57,9 +57,9 @@ $defs:
   languageInformation:
     type: object
     properties:
-      className: { type: string }
-      namespace: { type: string }
-      mediaType: { type: array, items: {type: string} }
+      clientClassName: { type: string }
+      clientNamespaceName: { type: string }
+      structuredMimeTypes: { type: array, items: {type: string} }
       dependencyInstallCommand: { type: string }
       dependencies: { type: array, items: {$ref: "#/$defs/package"} }
   package:
@@ -80,12 +80,14 @@ info:
 x-ms-kiota-info:
   languagesInformation:
     CSharp:
-      className: graphClient
-      namespace: Microsoft.Graph
+      clientClassName: graphClient
+      clientNamespaceName: Microsoft.Graph
       dependencyInstallCommand: dotnet add package {name} --version {version}
       dependencies:
         - name: Microsoft.Graph.Core
           version: 3.0.0
+      structuredMimeTypes:
+        - application/json
 servers:
   - url: https://graph.microsoft.com/v1.0")
 ```
