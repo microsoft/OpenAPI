@@ -51,8 +51,8 @@ paths:
     operations:
       get:
         x-ms-deprecation:
-          removalDate: '2022-10-24'
-          date: '2022-08-30'
+          removalDate: '2022-10-24T00:00:00.0000000+00:00'
+          date: '2022-08-30T00:00:00.0000000+00:00'
           version: 'v1.0'
           description: 'Foo APIs are being retired in favor of the bar APIs'
 servers:
