@@ -89,7 +89,7 @@ x-ms-kiota-info:
       structuredMimeTypes:
         - application/json
 servers:
-  - url: https://graph.microsoft.com/v1.0")
+  - url: https://graph.microsoft.com/v1.0
 ```
 
 Used by: (informational)

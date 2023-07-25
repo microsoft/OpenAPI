@@ -14,6 +14,7 @@
 |[x-ms-client-name](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-name) | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
 |[x-ms-client-flatten](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-flatten) | flattens client model property or parameter. |AutoRest| |
 |[x-ms-mutability](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-mutability) | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest||
+| [x-ms-deprecation](x-ms-deprecation.md)| Provides additional information about a deprecated endpoint, schema, property, etc... | Kiota |
 
 ## UI Extensions
 
