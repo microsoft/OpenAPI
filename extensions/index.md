@@ -4,17 +4,18 @@
 
 | Name | Purpose | Used By | Status |
 |------|---------|---------|--------|
-|[x-ms-info-kiota](x-kiota-info.md)| Provides configuration information to the Kiota API client code generator| Kiota |
-|[x-ms-pageable](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-pageable) | allows paging through lists of data. |AutoRest||
-|[x-ms-parameter-grouping](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-grouping) | groups method parameters in generated clients |AutoRest|
-|[x-ms-parameter-location](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-location) | provides a mechanism to specify that the global parameter is actually a parameter on the operation and not a client property. |AutoRest|
-|[x-ms-odata](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-odata) | indicates the operation includes one or more [OData](http://www.odata.org/) query parameters. |AutoRest|||
-|[x-ms-external](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-external) | allows specific Definition Objects to be excluded from code generation |AutoRest| |
-|[x-ms-code-generation-settings](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-code-generation-settings) | enables passing code generation settings via OpenAPI document |Autorest|  |
-|[x-ms-client-name](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-name) | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
 |[x-ms-client-flatten](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-flatten) | flattens client model property or parameter. |AutoRest| |
-|[x-ms-mutability](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-mutability) | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest||
-| [x-ms-deprecation](x-ms-deprecation.md)| Provides additional information about a deprecated endpoint, schema, property, etc... | Kiota |
+|[x-ms-client-name](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-name) | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
+|[x-ms-code-generation-settings](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-code-generation-settings) | enables passing code generation settings via OpenAPI document |Autorest|  |
+|[x-ms-deprecation](x-ms-deprecation.md)| Provides additional information about a deprecated endpoint, schema, property, etc... | Kiota | |
+|[x-ms-external](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-external) | allows specific Definition Objects to be excluded from code generation |AutoRest| |
+|[x-ms-info-kiota](x-kiota-info.md)| Provides configuration information to the Kiota API client code generator| Kiota |
+|[x-ms-mutability](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-mutability) | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest| |
+|[x-ms-odata](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-odata) | indicates the operation includes one or more [OData](http://www.odata.org/) query parameters. |AutoRest| |
+|[x-ms-pageable](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-pageable) | allows paging through lists of data. |AutoRest||
+|[x-ms-parameter-grouping](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-grouping) | groups method parameters in generated clients |AutoRest| |
+|[x-ms-parameter-location](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-location) | provides a mechanism to specify that the global parameter is actually a parameter on the operation and not a client property. |AutoRest| |
+|[x-ms-reserved-parameter](x-ms-reserved-parameter.md) | provides details on whether a path parameter should be reserved in an URI template or not | Kiota | |
 
 ## UI Extensions
 

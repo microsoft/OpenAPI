@@ -1,6 +1,6 @@
 # OpenAPI Extension: x-ms-kiota-info
 
-This extension enables API providers to annotation their OpenAPI descriptions to simplify the use of [Kiota](https://microsoft.github.io/kiota) tooling. By providing this information in the OpenAPI description it is not necessary for API consumers to provide these parameters when generating API client code.  This allows the API provider to deliver a simple experience for developers to generate clients and can easily identify package dependencies that further enhance the experience with support for custom media types and authentication providers.
+This extension enables API providers to annotation their OpenAPI descriptions to simplify the use of [Kiota](https://aka.ms/kiota) tooling. By providing this information in the OpenAPI description it is not necessary for API consumers to provide these parameters when generating API client code.  This allows the API provider to deliver a simple experience for developers to generate clients and can easily identify package dependencies that further enhance the experience with support for custom media types and authentication providers.
 
 ## x-ms-kiota-info object
 
@@ -12,7 +12,7 @@ Properties are optional unless specified otherwise.
 
 | name | type | description |
 |---|---|---|
-| languagesInformation | map[string,languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` [parameter](https://microsoft.github.io/kiota/using.html#--language--l) will be used by Kiota. Keys are matched case insensitive.|
+| languagesInformation | map[string,languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` [parameter](https://learn.microsoft.com/en-us/openapi/kiota/using#--language--l) will be used by Kiota. Keys are matched case insensitive.|
 
 ## languageInformation Object
 
@@ -94,4 +94,4 @@ servers:
 
 Used by: (informational)
 
-* [Microsoft Kiota](https://microsoft.github.io/kiota)
+* [Microsoft Kiota](https://aka.ms/kiota)

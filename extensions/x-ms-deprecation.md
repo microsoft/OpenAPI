@@ -61,4 +61,4 @@ servers:
 
 Used by: (informational)
 
-* [Microsoft Kiota](https://microsoft.github.io/kiota)
+* [Microsoft Kiota](https://aka.ms/kiota)
