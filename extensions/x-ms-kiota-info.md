@@ -12,7 +12,7 @@ Properties are optional unless specified otherwise.
 
 | name | type | description |
 |---|---|---|
-| languagesInformation | map[string,languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` [parameter](https://aka.ms/kiota/using.html#--language--l) will be used by Kiota. Keys are matched case insensitive.|
+| languagesInformation | map[string,languageInformation] | Map of language information used to configure Kiota API client code generation. Only key values that match one of the values used in the Kiota `--language` [parameter](https://learn.microsoft.com/en-us/openapi/kiota/using#--language--l) will be used by Kiota. Keys are matched case insensitive.|
 
 ## languageInformation Object
 
