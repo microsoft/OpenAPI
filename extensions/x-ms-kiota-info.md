@@ -4,7 +4,7 @@ This extension enables API providers to annotation their OpenAPI descriptions to
 
 ## x-ms-kiota-info object
 
-The `x-ms-kiota-info`object is used to contain information used by the Kiota API client generator tooling. It can appear as a property in the root object of the OpenAPI document.
+The `x-ms-kiota-info` object is used to contain information used by the Kiota API client generator tooling. It can appear as a property in the root object of the OpenAPI document.
 
 ### Properties
 
