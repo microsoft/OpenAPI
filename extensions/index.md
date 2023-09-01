@@ -8,6 +8,7 @@
 |[x-ms-client-name](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-name) | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
 |[x-ms-code-generation-settings](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-code-generation-settings) | enables passing code generation settings via OpenAPI document |Autorest|  |
 |[x-ms-deprecation](x-ms-deprecation.md)| Provides additional information about a deprecated endpoint, schema, property, etc... | Kiota | |
+|[x-ms-enum-flags](x-ms-enum-flags.md)| Provides information about whether an enum is bitwise(flagged) and the expected serialization format | Kiota | |
 |[x-ms-external](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-external) | allows specific Definition Objects to be excluded from code generation |AutoRest| |
 |[x-ms-info-kiota](x-kiota-info.md)| Provides configuration information to the Kiota API client code generator| Kiota |
 |[x-ms-mutability](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-mutability) | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest| |
