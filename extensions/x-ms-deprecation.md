@@ -47,14 +47,13 @@ info:
   description: This OData service is located at https://graph.microsoft.com/v1.0
   version: 1.0.1
 paths:
-  '/foo'
-    operations:
-      get:
-        x-ms-deprecation:
-          removalDate: '2022-10-24T00:00:00.0000000+00:00'
-          date: '2022-08-30T00:00:00.0000000+00:00'
-          version: 'v1.0'
-          description: 'Foo APIs are being retired in favor of the bar APIs'
+  /foo:
+    get:
+      x-ms-deprecation:
+        removalDate: '2022-10-24T00:00:00.0000000+00:00'
+        date: '2022-08-30T00:00:00.0000000+00:00'
+        version: 'v1.0'
+        description: 'Foo APIs are being retired in favor of the bar APIs'
 servers:
   - url: https://graph.microsoft.com/v1.0
 ```
