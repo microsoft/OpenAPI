@@ -11,11 +11,6 @@ Properties are optional unless specified otherwise.
 | name | type | description |
 |---|---|---|
 | isFlags | boolean | Whether or not the enum is bitwise(flagged). Default is `false`(same as not specifying the extension) |
-| style | string | The serialization format of the selected enum values. Default is `simple` |
-
-#### `style` values
-
-Only `simple`(Simple style parameters defined by [RFC6570](https://spec.openapis.org/oas/v3.0.0#style-values)) is currently supported by Kiota.
 
 ## Schema
 
@@ -27,10 +22,6 @@ properties:
   isFlags:
     type: boolean
     default: false
-  style:
-    type: string
-    nullable: true
-    default: simple
 ```
 
 ## Example
@@ -58,7 +49,6 @@ definitions:
     type: string
     x-ms-enum-flags:
       isFlags: true
-      style: simple
 ```
 
 Used by: (informational)
