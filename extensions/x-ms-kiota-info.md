@@ -28,7 +28,7 @@ Properties are optional unless specified otherwise.
 | clientNamespaceName |string | The namespace to use for all the generated classes(where supported by the language writer).|
 | structuredMimeTypes | string[]| Array of strings identifying media types used to represent structured types.|
 | dependencyInstallCommand | string | A template for a command to be used to install dependencies for use with the API|
-| dependencies | package[]] | An array of packages that the generated client code is dependent on.|
+| dependencies | package[] | An array of packages that the generated client code is dependent on.|
 
 ## package Object
 
@@ -40,6 +40,7 @@ An object that represents a package dependency that is required for the generate
 |---|---|---|
 | name | string| *Required* Name of package|
 | version | string| *Required* Version of the package |
+| type | string | *Optional* Type of the package between abstractions, serialization, http, authentication, bundle, additional |
 
 ## Schema
 
@@ -67,6 +68,7 @@ $defs:
     properties:
       name: { type: string }
       version: { type: string }
+      type: {type: string }
 ```
 
 ## Example
@@ -86,6 +88,7 @@ x-ms-kiota-info:
       dependencies:
         - name: Microsoft.Graph.Core
           version: 3.0.0
+          type: bundle
       structuredMimeTypes:
         - application/json
 servers:
