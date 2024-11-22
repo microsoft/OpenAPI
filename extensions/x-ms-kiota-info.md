@@ -26,9 +26,11 @@ Properties are optional unless specified otherwise.
 |---|---|---|
 | clientClassName | string| The name to use for generated client class|
 | clientNamespaceName |string | The namespace to use for all the generated classes(where supported by the language writer).|
-| structuredMimeTypes | string[]| Array of strings identifying media types used to represent structured types.|
-| dependencyInstallCommand | string | A template for a command to be used to install dependencies for use with the API|
 | dependencies | package[] | An array of packages that the generated client code is dependent on.|
+| dependencyInstallCommand | string | A template for a command to be used to install dependencies for use with the API|
+| maturityLevel | enum (string) | `Stable;Preview;Experimental;Abandoned` The level of maturity for the language from the support policy. |
+| structuredMimeTypes | string[]| Array of strings identifying media types used to represent structured types.|
+| supportExperience | enum (string) | `Microsoft;Community` The support experience provided for the language from the support policy. |
 
 ## package Object
 
@@ -60,9 +62,11 @@ $defs:
     properties:
       clientClassName: { type: string }
       clientNamespaceName: { type: string }
-      structuredMimeTypes: { type: array, items: {type: string} }
-      dependencyInstallCommand: { type: string }
       dependencies: { type: array, items: {$ref: "#/$defs/package"} }
+      dependencyInstallCommand: { type: string }
+      maturityLevel: { type: string, enum: [ "Stable", "Preview", "Experimental", "Abandoned" ]}
+      structuredMimeTypes: { type: array, items: {type: string} }
+      supportExperience: { type: string, enum: ["Microsoft", "Community" ]}
   package:
     type: object
     properties:
@@ -84,6 +88,8 @@ x-ms-kiota-info:
     CSharp:
       clientClassName: graphClient
       clientNamespaceName: Microsoft.Graph
+      maturityLevel: Stable
+      supportExperience: Microsoft
       dependencyInstallCommand: dotnet add package {name} --version {version}
       dependencies:
         - name: Microsoft.Graph.Core
