@@ -19,6 +19,14 @@
 |[x-ms-primary-error-message](x-ms-primary-error-message.md) | provides a hint to which property to use in an error type as the error message. | Kiota | |
 |[x-ms-reserved-parameter](x-ms-reserved-parameter.md) | provides details on whether a path parameter should be reserved in an URI template or not | Kiota | |
 
+## AI Plugin Generation Extensions
+
+| Name | Purpose | Used By | Status |
+|------|---------|---------|--------|
+|[x-ai-auth-reference-id](x-ai-auth-reference-id.md) | Captures the reference id of the auth registration to be used by the AI plugin. |Kiota| |
+|[x-ms-client-name](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-client-name) | allows control over identifier names used in client-side code generation for parameters and schema properties. |AutoRest| |
+|[x-ms-code-generation-settings](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-code-generation-settings) | enables passing code generation settings via OpenAPI document |Autorest|  |
+
 ## UI Extensions
 
 | Name | Purpose | Used By | Status |
