@@ -102,3 +102,51 @@ properties:
         items:
           type: string
           enum: [GetPublicData, GetPrivateData, DataTransform, DataExport, ResourceStateUpdate]
+```
+
+## Example
+
+```yaml
+openapi: 3.0.3
+info:
+  title: Sample API with AI Capabilities
+  version: 1.0.0
+paths:
+  /search:
+    get:
+      operationId: searchResources
+      description: Search for resources
+      x-ai-capabilities:
+        confirmation:
+          type: AdaptiveCard
+          title: Confirm Search
+          body: This will search across all resources. Continue?
+        response_semantics:
+          data_path: $.resources
+          properties:
+            title: $.name
+            subtitle: $.location
+            url: $.href
+            information_protection_label: $.ipLabel
+          static_template:
+            $schema: "http://adaptivecards.io/schemas/adaptive-card.json"
+            type: "AdaptiveCard"
+            version: "1.5"
+            body:
+              - type: "TextBlock"
+                text: "${name}"
+                weight: "Bolder"
+              - type: "TextBlock"
+                text: "${description}"
+            action:
+              - type: "Action.OpenUrl"
+                title: "View"
+                text: "${href}"
+        security_info:
+          data_handling:
+            - GetPrivateData
+            - DataTransform
+      responses:
+        200:
+          description: OK
+```
