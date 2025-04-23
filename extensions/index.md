@@ -23,9 +23,14 @@
 
 | Name | Purpose | Used By | Status |
 |------|---------|---------|--------|
-|[x-ai-auth-reference-id](x-ai-auth-reference-id.md) | Provides a way to define the reference id of the auth registration to be used by the AI plugin. |Kiota| |
-|[x-ai-adaptive-card](x-ai-adaptive-card.md) | Enables defining an external adaptive card for a given operation in the OpenAPI document. |Kiota| |
-|[x-ai-capabilities](x-ai-capabilities.md) | Provides a way to define the function capabilities of the AI plugin. |Kiota| |
+|[x-ai-adaptive-card](ai-plugin/x-ai-adaptive-card.md) | Enables defining an external adaptive card for a given operation in the OpenAPI document. |Kiota| |
+|[x-ai-auth-reference-id](ai-plugin/x-ai-auth-reference-id.md) | Provides a way to define the reference id of the auth registration to be used by the AI plugin. |Kiota| |
+|[x-ai-capabilities](ai-plugin/x-ai-capabilities.md) | Provides a way to define the function capabilities of the AI plugin. |Kiota| |
+|[x-ai-description](ai-plugin/x-ai-description.md) | Provides a way to define the description of the AI plugin that is provided to the AI model. |Kiota| |
+|[x-ai-reasoning-instructions](ai-plugin/x-ai-reasoning-instructions.md) | Provides a way to define the reasoning instructions when invoking the plugin function. |Kiota| |
+|[x-ai-responding-instructions](ai-plugin/x-ai-responding-instructions.md) | Provides a way to define the responding instructions when invoking the plugin function. |Kiota| |
+|[x-legal-info-url](ai-plugin/x-legal-info-url.md) | Provides a way to define the URL for legal information the AI plugin. |Kiota| |
+|[x-privacy-policy-url](ai-plugin/x-privacy-policy-url.md) | Provides a way to define the URL for privacy policy of the AI plugin. |Kiota| |
 
 ## UI Extensions
 

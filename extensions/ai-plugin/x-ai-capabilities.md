@@ -1,6 +1,6 @@
 # OpenAPI Extension: x-ai-capabilities
 
-This extension enables defining additional capabilities for operations in the OpenAPI document.
+This extension enables defining plugin function capabilities in the OpenAPI document.
 
 ## x-ai-capabilities object
 
@@ -150,3 +150,7 @@ paths:
         200:
           description: OK
 ```
+
+Used by: (informational)
+
+* [Microsoft Kiota](https://aka.ms/kiota)
