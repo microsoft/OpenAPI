@@ -23,9 +23,9 @@
 
 | Name | Purpose | Used By | Status |
 |------|---------|---------|--------|
-|[x-ai-auth-reference-id](x-ai-auth-reference-id.md) | Captures the reference id of the auth registration to be used by the AI plugin. |Kiota| |
+|[x-ai-auth-reference-id](x-ai-auth-reference-id.md) | Provides a way to define the reference id of the auth registration to be used by the AI plugin. |Kiota| |
 |[x-ai-adaptive-card](x-ai-adaptive-card.md) | Enables defining an external adaptive card for a given operation in the OpenAPI document. |Kiota| |
-|[x-ms-code-generation-settings](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-code-generation-settings) | enables passing code generation settings via OpenAPI document |Autorest|  |
+|[x-ai-capabilities](x-ai-capabilities.md) | Provides a way to define the function capabilities of the AI plugin. |Kiota| |
 
 ## UI Extensions
 
