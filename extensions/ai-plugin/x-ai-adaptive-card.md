@@ -25,6 +25,12 @@ properties:
   file:
     type: string
     nullable: false
+  title:
+    type: string
+    nullable: false
+  url:
+    type: string
+    nullable: true
 ```
 
 ## Example
@@ -43,6 +49,8 @@ paths:
       x-ai-adaptive-card:
         data_path: $.items
         file: path_to_file_for_email
+        title: title
+        url: url
       parameters:
         # Add parameters here
       responses:
@@ -55,6 +63,8 @@ paths:
       x-ai-adaptive-card:
         data_path: $.chats
         file: path_to_file_for_chat
+        title: title
+        url: url
       responses:
         200:
           description: OK
