@@ -14,6 +14,16 @@
 |[x-ms-mutability](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-mutability) | provides insight to Autorest on how to generate code. It doesn't alter the modeling of what is actually sent on the wire. |AutoRest| |
 |[x-ms-odata](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-odata) | indicates the operation includes one or more [OData](http://www.odata.org/) query parameters. |AutoRest| |
 |[x-ms-pageable](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-pageable) | allows paging through lists of data. |AutoRest||
+|[x-ms-list](x-ms-list.md) | Marks an operation as a list operation. | TypeSpec | |
+|[x-ms-list-page-index](x-ms-list-page-index.md) | Marks a query parameter as the page index for a list operation. | TypeSpec | |
+|[x-ms-list-offset](x-ms-list-offset.md) | Marks a query parameter as the page offset for a list operation. | TypeSpec | |
+|[x-ms-list-page-items](x-ms-list-page-items.md) | Marks a response property as the array of items for a list operation. | TypeSpec | |
+|[x-ms-list-page-size](x-ms-list-page-size.md) | Marks a query parameter as the page size for a list operation. | TypeSpec | |
+|[x-ms-list-next-link](x-ms-list-next-link.md) | Marks a response property as the next-page link for a list operation. | TypeSpec | |
+|[x-ms-list-prev-link](x-ms-list-prev-link.md) | Marks a response property as the previous-page link for a list operation. | TypeSpec | |
+|[x-ms-list-first-link](x-ms-list-first-link.md) | Marks a response property as the first-page link for a list operation. | TypeSpec | |
+|[x-ms-list-last-link](x-ms-list-last-link.md) | Marks a response property as the last-page link for a list operation. | TypeSpec | |
+|[x-ms-list-continuation-token](x-ms-list-continuation-token.md) | Marks a continuation token used by list operations. | TypeSpec | |
 |[x-ms-parameter-grouping](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-grouping) | groups method parameters in generated clients |AutoRest| |
 |[x-ms-parameter-location](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-parameter-location) | provides a mechanism to specify that the global parameter is actually a parameter on the operation and not a client property. |AutoRest| |
 |[x-ms-primary-error-message](x-ms-primary-error-message.md) | provides a hint to which property to use in an error type as the error message. | Kiota | |
