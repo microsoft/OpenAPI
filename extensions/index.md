@@ -1,5 +1,20 @@
 # OpenAPI Extensions used at Microsoft
 
+## Extensions Supported in V2
+
+| Name | Purpose | Used By | Status |
+|------|---------|---------|--------|
+|[x-ms-visibility](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#x-ms-visibility)| visibility of parameters, operations, etc.| Power Platform & Logic Apps| |
+|[x-ms-capabilities](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#x-ms-capabilities)| connector level - testConnection capability, operation level - chunkTransfer | Power Platform & Logic Apps| |
+|[x-ms-url-encoding](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#x-ms-url-encoding)| Identifies whether the current path parameter should be double URL-encoded | Power Platform & Logic Apps| |
+|[x-ms-dynamic-list](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#use-dynamic-values)| describe parameters whose possible values are determined dynamically at runtime | Power Platform & Logic Apps| |
+|[x-ms-dynamic-properties](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#use-dynamic-schema)| describe schemas whose structure is determined dynamically at runtime | Power Platform & Logic Apps | |
+|x-ms-connector-metadata| Key value pairs of metadata | Power Platform & Logic Apps | |
+|[x-ms-pageable](https://github.com/Azure/autorest/blob/main/docs/extensions/readme.md#x-ms-pageable)| Pagination support for operations | Power Platform & Logic Apps| |
+|x-ms-dynamic-tree| describe a schema or parameter whose values are dynamically retrieved and presented in a tree structure (e.g., file system) | Power Platform & Logic Apps | |
+|x-ms-editor| Custom editor type for a property in UX | Power Platform & Logic Apps | |
+|[x-ms-api-annotation](https://learn.microsoft.com/en-us/connectors/custom-connectors/openapi-extensions#x-ms-api-annotation)| operation versioning and lifecycle | Power Platform & Logic Apps | |
+
 ## Client Code Generation Extensions
 
 | Name | Purpose | Used By | Status |
